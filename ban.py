@@ -102,7 +102,7 @@ async def kickall(event):
 async def banall(event):
    if event.sender_id in SUDO_USERS:
      if not event.is_group:
-         Reply = f"Noob !! Use This Cmd in Group."
+         Reply = f"𝐀𝐁𝐄 𝐂𝐇𝐔𝐓𝐓𝐈𝐘𝐄 🤪 !! 𝐘𝐄 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐆𝐑𝐎𝐔𝐏 𝐌𝐄 𝐉𝐀 𝐊𝐄 𝐔𝐒𝐄 𝐊𝐀𝐑 𝐏𝐇𝐈𝐑 𝐃𝐄𝐊𝐇𝐎 𝐊𝐌𝐀𝐀𝐋 𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 𝐊𝐄 𝐁𝐎𝐓 𝐊𝐀 🥳🥳🥳🥳."
          await event.reply(Reply)
      else:
          await event.delete()
