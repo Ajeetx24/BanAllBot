@@ -46,7 +46,7 @@ RIGHTS = ChatBannedRights(
 
 logging.basicConfig(level=logging.INFO)
 
-print("Starting.....")
+print("𝐒𝐓𝐀𝐑𝐓𝐈𝐍𝐆.....")
 
 Riz = TelegramClient('Riz', Var.API_ID, Var.API_HASH).start(bot_token=Var.BOT_TOKEN)
 
@@ -63,14 +63,14 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"**I'm On** \n\n __Pong__ !! `{ms}` ms")
+        await event.edit(f"**I'm On 𝐀𝐉𝐄𝐄𝐓 𓆩𝗫𓆪 𝐑𝐎𝐁𝐎𝐓** \n\n __Pong__ !! `{ms}` ms")
 
 
 @Riz.on(events.NewMessage(pattern="^/kickall"))
 async def kickall(event):
    if event.sender_id in SUDO_USERS:
      if not event.is_group:
-         Reply = f"Noob !! Use This Cmd in Group."
+         Reply = f"𝐀𝐁𝐄 𝐂𝐇𝐔𝐓𝐓𝐈𝐘𝐄 🤪 !! 𝐘𝐄 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐆𝐑𝐎𝐔𝐏 𝐌𝐄 𝐉𝐀 𝐊𝐄 𝐔𝐒𝐄 𝐊𝐀𝐑 𝐏𝐇𝐈𝐑 𝐃𝐄𝐊𝐇𝐎 𝐊𝐌𝐀𝐀𝐋 𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 𝐊𝐄 𝐁𝐎𝐓 𝐊𝐀 🥳🥳🥳🥳."
          await event.reply(Reply)
      else:
          await event.delete()
@@ -79,8 +79,8 @@ async def kickall(event):
          admin = RiZ.admin_rights
          creator = RiZ.creator
          if not admin and not creator:
-              return await event.reply("I Don't have sufficient Rights !!")
-         RiZoeL = await Riz.send_message(event.chat_id, "**Hello !! I'm Alive**")
+              return await event.reply("𝐂𝐇𝐔𝐓𝐈𝐘𝐄𝐄 𝐑𝐈𝐆𝐇𝐓𝐒 𝐓𝐎 𝐃𝐈𝐋𝐀 👿👿👿, 𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 😍 𝐊𝐀 𝐁𝐎𝐓 𝐀𝐀𝐈𝐒𝐄 𝐊𝐀𝐀𝐌 𝐍𝐀𝐇𝐈 𝐊𝐀𝐑𝐓𝐀 😊😌😌😌!!")
+         RiZoeL = await Riz.send_message(event.chat_id, "**𝐇𝐄𝐇𝐄𝐄𝐄 !! 𝐌𝐀𝐈 𝐉𝐈𝐍𝐃𝐀 𝐇𝐔 😍😍**")
          admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
          admins_id = [i.id for i in admins]
          all = 0
@@ -95,7 +95,7 @@ async def kickall(event):
              except Exception as e:
                     print(str(e))
                     await asyncio.sleep(0.1)
-         await RiZoeL.edit(f"**Users Kicked Successfully ! \n\n Kicked:** `{kimk}` \n **Total:** `{all}`")
+         await RiZoeL.edit(f"**𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 🥵 𝐍𝐄 𝐂𝐇𝐎𝐃𝐃𝐃 👉👉👌 𝐊𝐄 𝐂𝐇𝐇𝐎𝐑 𝐃𝐈𝐘𝐀 😋😋😋** `{kimk}` \n **Total:** `{all}`")
     
 
 @Riz.on(events.NewMessage(pattern="^/banall"))
@@ -111,8 +111,8 @@ async def banall(event):
          admin = RiZ.admin_rights
          creator = RiZ.creator
          if not admin and not creator:
-              return await event.reply("I Don't have sufficient Rights !!")
-         RiZoeL = await Riz.send_message(event.chat_id, "**Hello !! I'm Alive**")
+              return await event.reply("𝐂𝐇𝐔𝐓𝐈𝐘𝐄𝐄 𝐑𝐈𝐆𝐇𝐓𝐒 𝐓𝐎 𝐃𝐈𝐋𝐀 👿👿👿, 𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 😍 𝐊𝐀 𝐁𝐎𝐓 𝐀𝐀𝐈𝐒𝐄 𝐊𝐀𝐀𝐌 𝐍𝐀𝐇𝐈 𝐊𝐀𝐑𝐓𝐀 😊😌😌😌!!")
+         RiZoeL = await Riz.send_message(event.chat_id, "**𝐇𝐄𝐇𝐄𝐄𝐄 !! 𝐌𝐀𝐈 𝐉𝐈𝐍𝐃𝐀 𝐇𝐔 😍😍**")
          admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
          admins_id = [i.id for i in admins]
          all = 0
@@ -127,14 +127,14 @@ async def banall(event):
              except Exception as e:
                    print(str(e))
                    await asyncio.sleep(0.1)
-         await RiZoeL.edit(f"**Users Banned Successfully ! \n\n Banned Users:** `{bann}` \n **Total Users:** `{all}`")
+         await RiZoeL.edit(f"**𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 🥵 𝐍𝐄 𝐂𝐇𝐎𝐃𝐃𝐃 👉👉👌 𝐊𝐄 𝐂𝐇𝐇𝐎𝐑 𝐃𝐈𝐘𝐀 😋😋😋 ! \n\n Banned Users:** `{bann}` \n **Total Users:** `{all}`")
 
     
 @Riz.on(events.NewMessage(pattern="^/unbanall"))
 async def unban(event):
    if event.sender_id in SUDO_USERS:
      if not event.is_group:
-         Reply = f"Noob !! Use This Cmd in Group."
+         Reply = f"𝐂𝐇𝐔𝐓𝐈𝐘𝐄𝐄 𝐑𝐈𝐆𝐇𝐓𝐒 𝐓𝐎 𝐃𝐈𝐋𝐀 👿👿👿, 𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 😍 𝐊𝐀 𝐁𝐎𝐓 𝐀𝐀𝐈𝐒𝐄 𝐊𝐀𝐀𝐌 𝐍𝐀𝐇𝐈 𝐊𝐀𝐑𝐓𝐀 😊😌😌😌!!."
          await event.reply(Reply)
      else:
          msg = await event.reply("Searching Participant Lists.")
@@ -181,7 +181,7 @@ async def _(e):
 @Riz.on(events.NewMessage(pattern="^/restart"))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        text = "__Restarting__ !!!"
+        text = "__Restarting__ babu !!!"
         await e.reply(text, parse_mode=None, link_preview=None )
         try:
             await Riz.disconnect()
